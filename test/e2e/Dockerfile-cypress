@@ -1,0 +1,12 @@
+FROM cypress/included:latest
+
+WORKDIR /app
+
+COPY cypress .
+COPY cypress.config.js .
+COPY package.json ./
+COPY package*.json ./
+
+RUN npm install
+
+CMD ["npm", "run", "cy:run"]

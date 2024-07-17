@@ -1,0 +1,57 @@
+@import "vars";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+  background-color: $orange;
+  padding: 5px 20px;
+}
+
+.layout-title {
+  color: $darkViolet;
+  margin-right: 10px;
+  font-size: 50px;
+}
+
+.layout-menu-item {
+  text-decoration: none;
+}
+
+.layout-menu-item:hover,
+.layout-menu-item:visited,
+.layout-menu-item:active {
+  text-decoration: none;
+}
+
+.layout-menu-item:last-child {
+  color: white;
+  background-color: $darkViolet;
+  font-size: 40px;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.layout-footer-text {
+  text-align: center;
+  color: $grey;
+  margin-top: 15px;
+
+  & a {
+    text-decoration: none;
+    color: $blue;
+
+    &:hover, :visited, :active {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+#content {
+  text-align: center;
+  margin: 0 5vw;
+  min-height: 90vh;
+}

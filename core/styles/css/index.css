@@ -1,0 +1,277 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+  background-color: #e46c1c;
+  padding: 5px 20px;
+}
+
+.layout-title {
+  color: #583178;
+  margin-right: 10px;
+  font-size: 50px;
+}
+
+.layout-menu-item {
+  text-decoration: none;
+}
+
+.layout-menu-item:hover,
+.layout-menu-item:visited,
+.layout-menu-item:active {
+  text-decoration: none;
+}
+
+.layout-menu-item:last-child {
+  color: white;
+  background-color: #583178;
+  font-size: 40px;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.layout-footer-text {
+  text-align: center;
+  color: #333333;
+  margin-top: 15px;
+}
+.layout-footer-text a {
+  text-decoration: none;
+  color: #2146BB;
+}
+.layout-footer-text a:hover, .layout-footer-text a :visited, .layout-footer-text a :active {
+  text-decoration: none;
+  color: #2146BB;
+}
+
+#content {
+  text-align: center;
+  margin: 0 5vw;
+  min-height: 90vh;
+}
+
+.index-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.index-logo {
+  width: 850px;
+}
+
+.index-text-container {
+  width: 100%;
+}
+
+.index-text {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: justify;
+  color: #333333;
+}
+
+.to-jobs-on-text {
+  text-decoration: none;
+}
+
+.to-jobs-on-text:hover,
+.to-jobs-on-text:visited,
+.to-jobs-on-text:active {
+  text-decoration: none;
+}
+
+.to-jobs-on-text:last-child {
+  color: white;
+  background-color: #583178;
+  font-size: 40px;
+  padding: 2px 15px;
+  border-radius: 10px;
+}
+
+#vacantes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  gap: 30px;
+}
+
+.vacante {
+  position: relative;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  width: 600px;
+  height: 450px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: justify;
+  height: 250px;
+  max-height: 50%;
+}
+
+.card-title {
+  text-align: left;
+  font-size: 50px;
+}
+
+.ver-button {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #e46c1c;
+  font-size: 25px;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.ver-button:active, .ver-button:visited {
+  color: white;
+}
+.ver-button i {
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.ver-button {
+  text-decoration: none;
+}
+
+.ver-button:hover,
+.ver-button:visited,
+.ver-button:active {
+  text-decoration: none;
+}
+
+@media screen and (min-device-width: 700px) {
+  #vacantes-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .vacante {
+    width: 330px;
+  }
+  .card-text {
+    font-size: 30px;
+  }
+  .card-title {
+    font-size: 40px;
+  }
+}
+.job-container {
+  padding: 10px 20px;
+}
+.job-container .job-title {
+  color: #333333;
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+
+.job-tags-container {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  margin: 10px 0 30px;
+}
+.job-tags-container .job-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 30px;
+}
+.job-tags-container .icon {
+  color: #583178;
+}
+.job-tags-container .job-icon-text {
+  color: #9E9C9C;
+  font-size: 15px;
+}
+.job-tags-container.detail {
+  justify-content: center;
+}
+
+.job-description-container {
+  margin-top: 50px;
+}
+.job-description-container .job-subtitle {
+  color: #333333;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.job-description-container .job-description-text {
+  color: #333333;
+  font-size: 30px;
+}
+
+.job-apply-button {
+  margin: 50px auto 0;
+  background-color: #583178;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px 30px;
+  font-size: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+
+dialog {
+  margin: auto;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+dialog #close-modal-button {
+  cursor: pointer;
+  margin-left: 80vw;
+}
+dialog form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+dialog .form-group {
+  display: flex;
+  width: 70%;
+  gap: 2px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+dialog .form-group label {
+  text-align: left;
+}
+dialog .form-group input {
+  padding: 5px 0;
+  text-indent: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: solid 0.5px #583178;
+}
+dialog input[type=file] {
+  accent-color: #583178;
+  border: none;
+  text-indent: 0;
+}
+
+* {
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

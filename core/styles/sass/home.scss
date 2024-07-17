@@ -1,0 +1,42 @@
+@import "vars";
+
+.index-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.index-logo {
+  width: 850px;
+}
+
+.index-text-container {
+  width: 100%;
+}
+
+.index-text {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: justify;
+  color: $grey;
+}
+
+.to-jobs-on-text {
+  text-decoration: none;
+}
+.to-jobs-on-text:hover,
+.to-jobs-on-text:visited,
+.to-jobs-on-text:active {
+  text-decoration: none;
+}
+
+.to-jobs-on-text:last-child {
+  color: white;
+  background-color: $darkViolet;
+  font-size: 40px;
+  padding: 2px 15px;
+  border-radius: 10px;
+}
